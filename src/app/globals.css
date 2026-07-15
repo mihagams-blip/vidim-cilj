@@ -110,6 +110,7 @@ h1 em, h2 em { color: var(--blue); font-style: normal; font-weight: 500; }
 .scroll-cue svg { width: 17px; animation: cue 2s ease-in-out infinite; }
 .hero-stage { min-height: 100svh; position: relative; display: grid; overflow: hidden; isolation: isolate; background: var(--navy-deep); }
 .hero-background { position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; animation: hero-backdrop-drift 16s ease-in-out infinite alternate; }
+.hero-background-video { animation: none; }
 .hero-overlay { position: absolute; z-index: 1; inset: 0; background: linear-gradient(90deg, rgba(2,22,42,.94) 0%, rgba(3,43,80,.84) 39%, rgba(3,43,80,.34) 68%, rgba(2,22,42,.25) 100%), linear-gradient(180deg, rgba(2,22,42,.12) 45%, rgba(2,22,42,.72) 100%); }
 .hero-content { min-height: 100svh; padding-top: 120px; padding-bottom: 95px; position: relative; z-index: 3; display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, .45fr); gap: 70px; align-items: center; }
 .hero-content .hero-copy { max-width: 760px; padding-top: 20px; }
@@ -486,6 +487,7 @@ h1 em, h2 em { color: var(--blue); font-style: normal; font-weight: 500; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; }
+  .hero-background-video { display: none; }
 }
 
 @media (prefers-contrast: more) {

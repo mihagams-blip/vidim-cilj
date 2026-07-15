@@ -107,13 +107,25 @@ export default async function Home() {
         <section className="hero" id="vrh" aria-labelledby="hero-title">
           <div className="hero-stage">
             <Image
-              className="hero-background"
-              src="/images/hero-atmosphere-v2.webp"
-              alt="Mladi plavalec samozavestno plava proti trenerju ob robu bazena."
+              className="hero-background hero-background-poster"
+              src="/images/hero-pool-loop-poster-v1.png"
+              alt="Mladi plavalec samozavestno plava ob trenerki na robu bazena."
               fill
               priority
               sizes="100vw"
             />
+            <video
+              className="hero-background hero-background-video"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              poster="/images/hero-pool-loop-poster-v1.png"
+              aria-hidden="true"
+            >
+              <source src="/videos/hero-pool-loop-v1.mp4" type="video/mp4" />
+            </video>
             <div className="hero-overlay" aria-hidden="true" />
             <div className="hero-tide" aria-hidden="true"><span /><span /></div>
             <div className="shell hero-content">
